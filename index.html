@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="bg">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test drag and drop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        
+        <div id="inline" class="example-parent">
+            <div
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+                ondragend="onDragEnd(event);"
+                ondragenter="onDragEnter(event);"> a div</div>
+            
+            <span id="draggable-1"
+            class="example-draggable"
+            draggable="true"
+            ondragstart="onDragStart(event);"
+            ondragend="onDragEnd(event);"
+            ondragenter="onDragEnter(event);">a span</span>
+           
+            <div class="example-origin">
+                
+                <img src="ponies/rainbowpony.png"
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+                ondragend="onDragEnd(event);"
+                ondragenter="onDragEnter(event);">
+                <img id="img2" src="ponies/accessories1.png"
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+                ondragend="onDragEnd(event);"
+                ondragenter="onDragEnter(event);">
+              <div
+                id="draggable-1"
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+                ondragend="onDragEnd(event);"
+                ondragenter="onDragEnter(event);"
+              >
+                Take me home
+              </div>
+            </div>
+           
+            
+          </div> 
+          <div id="inline"
+
+              class="example-dropzone"
+              ondragover="onDragOver(event);"
+              ondrop="onDrop(event);"
+              ondragenter="onDragEnter(event);"
+              ondragend="onDragEnd(event);"
+            >
+              Home
+            </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

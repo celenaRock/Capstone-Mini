@@ -1,0 +1,66 @@
+
+body, html {
+    height: 100%;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("ponies/book6-900x1022.jpg");
+  
+    /* Full height */
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  
+.example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .example-origin {
+    border: 2px solid #DFA612;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .example-draggable {
+    border: 2px solid #DFA612;
+    /* opacity: .5; */
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor:-webkit-grab               /*    how to grab */
+    
+}
+  
+  .example-dropzone {
+    border: 2px solid #DFA612;
+   background-image: url("ponies/rainbowpony.png");
+   flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  img {
+      width: 200px;
+  }
+  
+  #img2 {
+    width: 100px;
+}
+
+#inline {
+  display: inline;
+  float:left;
+}
