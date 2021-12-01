@@ -16,8 +16,80 @@ body, html {
     background-size: cover;
 
   }
+  /* #grid {
+       display: grid; 
+       grid-template-columns: auto auto; 
+    } */
+.accessories-holder {
+    border: 1px solid black;
+    padding-bottom: 5px;
+    width: 1000px;
+    height:250px;
+}
+
+#dress {
+width: 200px
+
+}
+
+#shoe {
+    
+}
+
+  .container {
+    border: 1px solid black;
+    display: inherit;
+    
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+
+.draggable {
+    
+    border: 1px solid black;
+    cursor: grabbing;
+    margin: 5px;
+    width: inherit;
+   
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
   
-  
+.dropzone {
+    width: 600px;
+    height: 350px;
+    padding: 5px;
+    background-image: url(ponies/rainbowpony.png);
+    background-repeat: no-repeat;
+    display: flex;
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns: repeat(15, auto);
+    grid-template-rows: auto auto auto;
+    max-inline-size: 600px;
+} 
+
+.acc-container {
+    border: 1px solid black;
+   
+
+}
+.acc-container2 {
+    border: 1px solid black;
+
+}
+.acc-container3 {
+    border: 1px solid black;
+
+}
+.acc-container4 {
+    border: 1px solid black;
+
+}
+
 .example-parent {
     border: 2px solid #DFA612;
     color: black;
@@ -44,9 +116,9 @@ body, html {
     
 }
   
-  .example-dropzone {
+  .sub-item {
     border: 2px solid #DFA612;
-   background-image: url("ponies/rainbowpony.png");
+   
    flex-basis: 100%;
     flex-grow: 1;
     padding: 10px;
@@ -64,3 +136,4 @@ body, html {
   display: inline;
   float:left;
 }
+

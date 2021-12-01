@@ -2,6 +2,59 @@
 
 //How this works: Event = "drag", Event handler = "ondrag", Fires When = dragging interactivity on browser
 
+const draggables = document.querySelectorAll('.draggable')
+const containers = document.querySelectorAll('.container')
+
+
+draggables.forEach(draggable => {
+    draggable.addEventListener('dragstart', () => {
+        console.log('drag start')
+        draggable.classList.add('dragging')
+    })
+
+    draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('dragging')
+    })
+})
+
+containers.forEach(container => {
+    container.addEventListener('dragover', (event) => {
+        event.preventDefault()
+        const afterElement = getDragAfterElement(container, event.clientY)
+        console.log(afterElement)
+        console.log('drag over')
+        const draggable = document.querySelector('.dragging')
+        if (afterElement == null) {
+        container.appendChild(draggable)
+        } else {container.insertBefore(draggable, afterElement)}
+    })
+})
+
+function getDragAfterElement(container, y) {
+   const draggableElements =[...container.querySelectorAll('.draggable:not(.dragging)')]
+
+  return draggableElements.reduce((closest, child) => {
+    const box = child.getBoundingClientRect()
+    console.log(box)
+    const offset = y - box.top - box.height / 2
+    if (offset < 0 && offset > closest.offset) {
+        return { offset: offset, element: child }
+     } else {
+            return closest
+        }
+    
+   }, { offset: Number.POSITIVE_INFINITY }).element
+}
+// var container = document.getElementById("grid");
+// var cell = document.createElement("div");
+// cell.innerHTML = "TEXT";
+// container.appendChild(cell);
+
+
+
+
+
+
 //sets up item to be dragged
 function onDragStart(event) {
     event.dataTransfer.setData('text/plain', event.target.id);
@@ -22,7 +75,7 @@ function onDragOver(event) {
 //once dropped
 function onDrop(event) {
     event.preventDefault();
-    const id = event.dataTransfer.getData('text',)
+    const id = event.dataTransfer.getData('text')
 //element to be dropped(by id)
     const draggableElement = document.getElementById(id);
 //select the drop zone element
@@ -40,6 +93,9 @@ function onDrop(event) {
 
 
 //further experimentation
+function ondragleave(event) {
+    event.dataTransfer.setDragImage(img, 10, 10);
+}
 
 //what happens when letting go of drag object
 function onDragEnd(event) {
@@ -47,6 +103,6 @@ function onDragEnd(event) {
 }
 //once entering the dropzone area
 function onDragEnter(event) {
-    // event.target.style.background = '#eee' ;
+    event.target.style.opacity = .5 ;
     console.log("you have entered the drop zone")
 }
