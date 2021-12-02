@@ -1,3 +1,11 @@
+const { ConnectionError } = require("sequelize/types");
+
+const hamburger = document.querySelector('.hamburger');
+const navlinks = document.querySelector('.navlinks');
+const links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener()
+
 //Documentation: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
 //How this works: Event = "drag", Event handler = "ondrag", Fires When = dragging interactivity on browser
