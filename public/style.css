@@ -105,7 +105,6 @@
 
   .wrapper {
     height: 100vh;
-    /*This part is important for centering*/
     display: inline-flex;
     justify-content: center;
   }
@@ -141,21 +140,16 @@
 
 html {
     height: 100%;
-  }
+}
 
-  .bg {
-    /* The image used */
+.bg {
     background-image: url("ponies/book6-900x1022.jpg");
-  
-    /* Full height */
     width: 100%;
-  
-    /* Center and scale the image nicely */
     background-position:center;
     background-repeat:repeat-y;
     background-size:cover;
 
-  }
+}
 
 
 
@@ -168,10 +162,6 @@ html {
 
 
 
-  /* #grid {
-       display: grid; 
-       grid-template-columns: auto auto; 
-    } */
 .accessories-holder {
     border: 1px solid black;
     
@@ -319,13 +309,6 @@ display: grid;
     border: 1px solid black;
 
 }
-
-
-
-
-
-
-
 
 
 
