@@ -11,12 +11,17 @@ app.use(cors());
 app.use(express.static("public"));
 
 const PORT = 4000
-const { home, artist } = require('./controller.js')
+const { home, artist, getComments } = require('./controller.js')
 
 
 
 app.get("/", home);
-app.get("/artist", artist)
+
+app.get("/artist", artist);
+
+app.get("/comments", getComments);
+
+
 app.get("/styles", (req, res) => {
     res.sendFile(path.join(__dirname, "public/stylesheets"));
 });
