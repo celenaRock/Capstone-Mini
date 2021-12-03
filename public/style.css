@@ -3,8 +3,31 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+.cont {
+  text-align: center;
+
+}
+
+.comments-sect {
+  padding-left: 15%;
+  list-style: none;
+
+}
+
+.comment {
+  margin: 1% 0;
+}
+
+
+
+
+
+
   body {
-    font-family: sans-serif;
+    font-family: 'Permanent Marker', cursive;
+  
+
   }
   
   nav {
@@ -43,6 +66,16 @@
     color: black;
   }
   
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 1500px) {
     .line {
       width: 30px;
