@@ -52,7 +52,7 @@
   }
   
   .landing {
-    background: white;
+    background: none;
     height: 40vh;
     display: flex;
     justify-content:inherit;
@@ -184,7 +184,9 @@ html {
 
 }
 
-
+#dress3 {
+  width: 200px;
+}
 
 
 
@@ -363,7 +365,9 @@ display: grid;
   left: 0;
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-image: url(/ponies/IMG_1580.jpg);
+  background-position: center;
   opacity: .5;
+  
   
 }
   
@@ -396,4 +400,19 @@ display: grid;
 
   label {
     padding: 20px;
+  }
+
+.about-artist {
+  background: black;
+  border: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+  .project-description {
+    align-items: center;
+    padding: 20px;
+    margin: 50px; 
+    font-style: italic;
   }
