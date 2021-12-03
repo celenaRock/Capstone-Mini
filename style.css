@@ -103,6 +103,38 @@
   }
 
 
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 50ch;
+    animation: typing 2s steps(50), blink 1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+
+
 
 
 
@@ -119,9 +151,9 @@ html {
     width: 100%;
   
     /* Center and scale the image nicely */
-    background-position: inherit;
-    background-repeat:none;
-    background-size: inherit;
+    background-position:center;
+    background-repeat:repeat-y;
+    background-size:cover;
 
   }
 
