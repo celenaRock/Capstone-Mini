@@ -11,21 +11,24 @@ hamburger.addEventListener("click", () => {
 
 //Documentation: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
-const rainbowform = document.getElementById("rainbow-form")
-const rainbowname = document.getElementById("rainbow-name")
-const rainbowcomment = document.getElementById("rainbow-comment")
+const rainbowForm = document.getElementById("rainbow")
+const rainbowName = document.getElementById("rainbow-name")
+const rainbowComment = document.getElementById("rainbow-comment")
 
-rainbowhandler = (event) => {
+submitHandler = (event) => {
   event.preventDefault()
   let object = {
-    name: rainbowname.value,
-    comment: rainbowcomment.value
+    name: rainbowName.value,
+    text: rainbowComment.value,
+    pony: event.target.id
   }
   axios.post('http://localhost:4000/comments', object)
   .then(res => renderComment(res.data))
+
+  event.target.reset()
 }
 
-rainbowform.addEventListener("submit", rainbowhandler)
+rainbowForm.addEventListener("submit", submitHandler);
 
 getComments = () => {
   axios.get("http://localhost:4000/comments")

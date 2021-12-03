@@ -11,6 +11,17 @@ module.exports = {
     },
     getComments: (req, res) => {
         res.status(200).send(comments)
+    },
+
+    createComment: (req, res) => {
+        let { name, text, pony} = req.body;
+        let newComment = {
+            name: name,
+            text: text,
+            pony: pony
+        }
+        comments.push(newComment)
+        res.status(200).send(newComment)
     }
     
 }
