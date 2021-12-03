@@ -196,7 +196,7 @@ html {
 
 
 .accessories-holder {
-    border: 1px solid black;
+    
     
     padding: 10px;
     width: 600px;
@@ -217,7 +217,7 @@ width: 150px;
 }
 
   .container {
-    border: 1px solid black;
+    
     display: inherit;
     
     padding: 5px;
@@ -227,7 +227,7 @@ width: 150px;
 
 .draggable {
     
-    border: 1px solid black;
+    
     cursor: grabbing;
     margin: 5px;
     width: inherit;
@@ -245,7 +245,7 @@ width: 150px;
     background-image: url(ponies/rainbowpony.png);
     background-repeat: no-repeat;
     display: flex;
-    border: 1px solid black;
+    
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(10, auto);
@@ -255,21 +255,21 @@ width: 150px;
 
 .area1 {
 
-border: 1px solid lightcoral;
+
 display: grid;
     grid-template-columns:repeat(2, auto);
     grid-template-rows: repeat(4, auto);
 }
 
 .area2 {
-    border: 1px solid lightcoral;
+    
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 }
 
 .area3 {
-    border: 1px solid lightcoral;
+   
     display: grid;
     grid-template-columns:repeat(4, auto);
     grid-template-rows: repeat(10, auto);
@@ -277,49 +277,49 @@ display: grid;
 
 .area4 {
     
-    border: 1px solid yellow;
+    
     display: grid;
     grid-template-columns:repeat(5, auto);
     grid-template-rows: repeat(5, auto);
 }
 
 .area5 {
-    border: 1px solid lightcoral;
+    
     display: grid;
     grid-template-columns:repeat(5, auto);
     grid-template-rows: repeat(5, auto);
 }
 
 .area6 {
-    border: 1px solid lightcoral;
+    
     display: grid;
     grid-template-columns:repeat(5, auto);
     grid-template-rows: repeat(5, auto);
 }
 
 .area7 {
-    border: 1px solid lightcoral;
+    
     display: grid;
     grid-template-columns:repeat(4, auto);
     grid-template-rows: repeat(4, auto);
 }
 
 .area8 {
-    border: 1px solid lightcoral;
+   
     display: grid;
     grid-template-columns:repeat(4, auto);
     grid-template-rows: repeat(4, auto);
 }
 
 .area9 {
-    border: 1px solid lightcoral;
+   
     display: grid;
     grid-template-columns:repeat(5, auto);
     grid-template-rows: repeat(5, auto);
 }
 
 .area10 {
-    border: 1px solid lightcoral;
+    
     display: grid;
     grid-template-columns:repeat(5, auto);
     grid-template-rows: repeat(5, auto);
@@ -392,4 +392,8 @@ display: grid;
     letter-spacing: -.023em;
     text-align: right;
 
+  }
+
+  label {
+    padding: 20px;
   }

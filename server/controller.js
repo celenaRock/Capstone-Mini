@@ -9,6 +9,11 @@ module.exports = {
     artist: (req, res) => {
         res.status(200).sendFile(path.join(__dirname, "../public/artist.html"));
     },
+    project: (req, res) => {
+        res.status(200).sendFile(path.join(__dirname, "../public/project.html"));
+    },
+
+
     getComments: (req, res) => {
         res.status(200).send(comments)
     },

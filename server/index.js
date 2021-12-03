@@ -11,14 +11,14 @@ app.use(cors());
 app.use(express.static("public"));
 
 const PORT = 4000
-const { home, artist, getComments, createComment } = require('./controller.js')
+const { home, artist, project, getComments, createComment } = require('./controller.js')
 
 
 
 app.get("/", home);
 
 app.get("/artist", artist);
-
+app.get("/project", project);
 app.get("/comments", getComments);
 app.post("/comments", createComment);
 
