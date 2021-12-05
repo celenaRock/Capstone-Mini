@@ -24,7 +24,7 @@ submitHandler = (event) => {
     text: text,
     pony: pony
   }
-  axios.post('http://localhost:4000/comments', object)
+  axios.post('https://unicornsbyjacqueline.herokuapp.com/comments', object)
   .then(res => renderComment(res.data))
 
   event.target.reset()
@@ -35,7 +35,7 @@ rainbowForm.addEventListener("submit", submitHandler);
 santaForm.addEventListener("submit", submitHandler); 
 
 getComments = () => {
-  axios.get("http://localhost:4000/comments")
+  axios.get("https://unicornsbyjacqueline.herokuapp.com/comments")
   .then(res => {
     res.data.forEach(comment => renderComment(comment))
   })
