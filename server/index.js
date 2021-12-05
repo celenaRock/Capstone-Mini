@@ -1,5 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+const dotenv = require('dotenv').config()
+
+const { SERVER_PORT } = process.env
 
 const app = express();
 
@@ -10,7 +13,7 @@ app.use(cors());
 
 app.use(express.static("public"));
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 const { home, artist, project, getComments, createComment } = require('./controller.js')
 
 
@@ -33,4 +36,9 @@ app.get("/js", (req, res) => {
 
 
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`)
+});
+
+
+
