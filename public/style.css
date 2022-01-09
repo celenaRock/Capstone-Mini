@@ -4,37 +4,34 @@
     box-sizing: border-box;
   }
 
-.cont {
-  text-align: center;
 
-}
-
-.comments-sect {
-  padding-left: 15%;
-  list-style: none;
-
-}
-
-.comment {
-  margin: 1% 0;
-}
-
-
-
-
-
-
-  body {
-    font-family: 'Permanent Marker', cursive;
-  
-
+  .cont {
+    text-align: center;
   }
+
+
+  .comments-sect {
+    padding-left: 15%;
+    list-style: none;
+  }
+
+
+  .comment {
+    margin: 1% 0;
+  }
+
+
+body {
+    font-family: 'Permanent Marker', cursive;
+}
   
-  nav {
+
+nav {
     height: 20vh;
     background: black;
-  }
+}
   
+
   .nav-links {
     display: flex;
     list-style: none;
@@ -45,6 +42,7 @@
     margin-left: auto;
   }
   
+
   .nav-links li a {
     color: white;
     text-decoration: none;
@@ -67,15 +65,6 @@
   }
   
 
-
-
-
-
-
-
-
-
-
   @media screen and (max-width: 1500px) {
     .line {
       width: 30px;
@@ -83,6 +72,7 @@
       background: white;
       margin: 5px;
     }
+
     nav {
       position: relative;
     }
@@ -107,29 +97,37 @@
       transition: all 1s ease-out;
       pointer-events: none;
     }
+
     .nav-links.open {
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
       pointer-events: all;
     }
+
     .landing {
       flex-direction: column;
     }
+
     .nav-links li {
       opacity: 0;
     }
+
     .nav-links li a {
       font-size: 25px;
     }
+
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;
     }
+
     .nav-links li:nth-child(2) {
       transition: all 0.5s ease 0.4s;
     }
+
     .nav-links li:nth-child(3) {
       transition: all 0.5s ease 0.6s;
     }
+
     li.fade {
       opacity: 1;
     }
@@ -142,6 +140,7 @@
     justify-content: center;
   }
   
+
   .typing-demo {
     width: 50ch;
     animation: typing 2s steps(50), blink 1s step-end infinite alternate;
@@ -152,12 +151,14 @@
     font-size: 2em;
   }
   
+
   @keyframes typing {
     from {
       width: 0;
     }
   }
-      
+  
+  
   @keyframes blink {
     50% {
       border-color: transparent;
@@ -165,254 +166,236 @@
   }
 
 
-
-
-
-
-
-
 html {
     height: 100%;
 }
 
-.bg {
-    background-image: url("ponies/book6-900x1022.jpg");
-    width: 100%;
-    background-position:center;
-    background-repeat:repeat-y;
-    background-size:cover;
-
-}
-
-#dress3 {
-  width: 200px;
-}
+  .bg {
+      background-image: url("ponies/book6-900x1022.jpg");
+      width: 100%;
+      background-position:center;
+      background-repeat:repeat-y;
+      background-size:cover;
+  }
 
 
+  #dress3 {
+    width: 200px;
+  }
 
 
+    .accessories-holder {  
+      padding: 10px;
+      width: 600px;
+      height:200px;
+    }
 
 
+  #dress {
+    width: 150px;
+  }
 
 
+  #bow {
+      width:40px;
+  }
 
-
-.accessories-holder {
-    
-    
-    padding: 10px;
-    width: 600px;
-    height:200px;
-}
-
-#dress {
-width: 150px;
-
-}
-
-#shoe {
-    
-}
-
-#bow {
-    width:40px;
-}
 
   .container {
-    
-    display: inherit;
-    
+    display: inherit;  
     padding: 5px;
     justify-content: space-evenly;
-}
+  }
 
 
-.draggable {
+  .draggable {
+      cursor: grabbing;
+      margin: 5px;
+      width: inherit;  
+  }
+
+
+  .draggable.dragging {
+      opacity: .5;
+  }
     
     
-    cursor: grabbing;
-    margin: 5px;
-    width: inherit;
-   
-}
+  .dropzone {
+      width: 575px;
+      height: 350px;      
+      background-image: url(ponies/rainbowpony.png);
+      background-repeat: no-repeat;
+      display: flex;
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(10, auto);
+      grid-auto-rows:inherit;
+  } 
 
-.draggable.dragging {
+
+  .area1 {
+  display: grid;
+      grid-template-columns:repeat(2, auto);
+      grid-template-rows: repeat(4, auto);
+  }
+
+
+  .area2 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+  }
+
+
+  .area3 {
+      display: grid;
+      grid-template-columns:repeat(4, auto);
+      grid-template-rows: repeat(10, auto);
+  }
+
+
+  .area4 {
+      display: grid;
+      grid-template-columns:repeat(5, auto);
+      grid-template-rows: repeat(5, auto);
+  }
+
+
+  .area5 {
+      display: grid;
+      grid-template-columns:repeat(5, auto);
+      grid-template-rows: repeat(5, auto);
+  }
+
+
+  .area6 {
+      display: grid;
+      grid-template-columns:repeat(5, auto);
+      grid-template-rows: repeat(5, auto);
+  }
+
+
+  .area7 {
+      display: grid;
+      grid-template-columns:repeat(4, auto);
+      grid-template-rows: repeat(4, auto);
+  }
+
+
+  .area8 {
+      display: grid;
+      grid-template-columns:repeat(4, auto);
+      grid-template-rows: repeat(4, auto);
+  }
+
+
+  .area9 {
+      display: grid;
+      grid-template-columns:repeat(5, auto);
+      grid-template-rows: repeat(5, auto);
+  }
+
+
+  .area10 {
+      display: grid;
+      grid-template-columns:repeat(5, auto);
+      grid-template-rows: repeat(5, auto);
+  }
+
+
+  .acc-container {
+      border: 1px solid black;
+  }
+
+
+  .acc-container2 {
+      border: 1px solid black;
+  }
+
+
+  .acc-container3 {
+      border: 1px solid black;
+  }
+
+
+  .acc-container4 {
+      border: 1px solid black;
+  }
+
+
+  .ball{
+    position: relative;
+    flex-shrink: 0;
+    width: 38.197vw;
+    height: 38.197vw;
+    border-radius: 50%;
+    overflow: hidden;
+    }  
+
+
+  .noise {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-image: url("/ponies/artist.jpg");
+    background-position: center;
     opacity: .5;
-}
-  
-.dropzone {
-    width: 575px;
-    height: 350px;
+  }
+
     
-    background-image: url(ponies/rainbowpony.png);
-    background-repeat: no-repeat;
+  #gradient {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .section{
+    background: white;
     display: flex;
-    
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(10, auto);
-    grid-auto-rows:inherit;
-} 
-
-
-.area1 {
-
-
-display: grid;
-    grid-template-columns:repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-}
-
-.area2 {
-    
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-}
-
-.area3 {
-   
-    display: grid;
-    grid-template-columns:repeat(4, auto);
-    grid-template-rows: repeat(10, auto);
-}
-
-.area4 {
-    
-    
-    display: grid;
-    grid-template-columns:repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
-}
-
-.area5 {
-    
-    display: grid;
-    grid-template-columns:repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
-}
-
-.area6 {
-    
-    display: grid;
-    grid-template-columns:repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
-}
-
-.area7 {
-    
-    display: grid;
-    grid-template-columns:repeat(4, auto);
-    grid-template-rows: repeat(4, auto);
-}
-
-.area8 {
-   
-    display: grid;
-    grid-template-columns:repeat(4, auto);
-    grid-template-rows: repeat(4, auto);
-}
-
-.area9 {
-   
-    display: grid;
-    grid-template-columns:repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
-}
-
-.area10 {
-    
-    display: grid;
-    grid-template-columns:repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
-}
-
-.acc-container {
-    border: 1px solid black;
-   
-
-}
-.acc-container2 {
-    border: 1px solid black;
-
-}
-.acc-container3 {
-    border: 1px solid black;
-
-}
-.acc-container4 {
-    border: 1px solid black;
-
-}
-
-
-
-
-.ball{
-  position: relative;
-  flex-shrink: 0;
-  width: 38.197vw;
-  height: 38.197vw;
-  border-radius: 50%;
-  overflow: hidden;
-  }  
-.noise {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-image: url("/ponies/artist.jpg");
-  background-position: center;
-  opacity: .5;
-  
-  
-}
-  
-#gradient {
-  width: 100%;
-  height: 100%;
-}
-.section{
-  background: white;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
-  height: 70vh;
-}
-  .h1 {
-    z-index: 1;
-    margin-right: -20vw;
-    mix-blend-mode: multiply;
-    color: rgba(black, .4);
-    font-size: 6vw;
-    font-style:italic;
-    line-height: .92;
-    letter-spacing: -.023em;
-    text-align: right;
-
-  }
-
-  label {
-    padding: 20px;
-  }
-
-.about-artist {
-  background: black;
-  border: 20px;
-  padding: 20px;
-  font-size: 20px;
-  color: white;
-}
-
-  .project-description {
+    flex-wrap: nowrap;
     align-items: center;
-    padding: 20px;
-    margin: 50px; 
-    font-style: italic;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 70vh;
   }
+
+
+    .h1 {
+      z-index: 1;
+      margin-right: -20vw;
+      mix-blend-mode: multiply;
+      color: rgba(black, .4);
+      font-size: 6vw;
+      font-style:italic;
+      line-height: .92;
+      letter-spacing: -.023em;
+      text-align: right;
+    }
+
+
+    label {
+      padding: 20px;
+    }
+
+
+  .about-artist {
+    background: black;
+    border: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+  }
+
+
+    .project-description {
+      align-items: center;
+      padding: 20px;
+      margin: 50px; 
+      font-style: italic;
+    }
+
